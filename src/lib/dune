@@ -1,2 +1,2 @@
 (library
- (name plumblist))
+ (name plumblist_lib))

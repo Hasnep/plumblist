@@ -1,2 +1,3 @@
 (test
- (name plumblist))
+ (name plumblist_test)
+ (libraries plumblist_lib))

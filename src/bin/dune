@@ -1,4 +1,4 @@
 (executable
  (public_name plumblist)
  (name main)
- (libraries plumblist))
+ (libraries plumblist_lib))

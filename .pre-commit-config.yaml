@@ -23,7 +23,7 @@ repos:
 
   # Ocaml
   - repo: https://github.com/savonet/pre-commit-ocamlformat
-    rev: master
+    rev: v1.0.0
     hooks:
       - name: Format OCaml files
         id: ocamlformat

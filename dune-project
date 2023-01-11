@@ -2,6 +2,8 @@
 
 (name plumblist)
 
+(version 0.1.0)
+
 (generate_opam_files true)
 
 (source
@@ -15,6 +17,6 @@
 
 (package
  (name plumblist)
- (depends ocaml dune)
  (synopsis "")
- (description ""))
+ (description "")
+ (depends ocaml dune dune-build-info))

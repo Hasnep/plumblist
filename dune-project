@@ -15,4 +15,6 @@
 
 (package
  (name plumblist)
- (depends ocaml dune))
+ (depends ocaml dune)
+ (synopsis "")
+ (description ""))

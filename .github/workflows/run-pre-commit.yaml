@@ -1,0 +1,28 @@
+name: Run pre-commit
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-pre-commit:
+    name: Run pre-commit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install OCaml
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: 4.14.1
+          dune-cache: true
+      - name: Install OCamlFormat
+        run: opam install ocamlformat
+      - name: Run Pre-commit
+        uses: pre-commit/action@v3.0.0

@@ -1,2 +1,3 @@
 (library
- (name plumblist_lib))
+ (name plumblist_lib)
+ (libraries dune-build-info))
